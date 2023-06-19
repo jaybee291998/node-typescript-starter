@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "no-loops",
+      "prettier"
+    //   "github"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    //   "plugin:github/recommended"
+    ],
+    "rules": {
+        "no-console": 0, // 0=Off, 1=warning, 2=error
+        "no-loops/no-loops": 0,
+        "prettier/prettier": 2
+        // "typescript": 1
+    }
+  }
