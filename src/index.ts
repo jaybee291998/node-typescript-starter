@@ -10,6 +10,7 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use('/__gtg', routes.gtgRoute)
+app.use('/persons', routes.personRoute)
 
 type User = {
     name: string
