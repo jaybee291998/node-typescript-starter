@@ -1,0 +1,16 @@
+{
+    "keepSettings": {
+        "type": 2,
+        "amount": 10
+    },
+    "auditFilename": "audit.json",
+    "hashType": "md5",
+    "extension": "",
+    "files": [
+        {
+            "date": 1687229930574,
+            "name": "D:\\nodejs\\node-typescript\\logs\\access.2023-06-20.log",
+            "hash": "66f418fe1fa0a2e642d163de000a5b88"
+        }
+    ]
+}
