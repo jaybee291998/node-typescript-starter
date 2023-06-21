@@ -1,11 +1,11 @@
 import { ErrorRequestHandler } from 'express'
 import logger from '../logging/logger'
 
-const errorHandler: ErrorRequestHandler = (err, req, res) => {
-    if (err) {
-        logger.error(`${req.method}: ${req.url} - ${err.message}`)
-        res.status(500).json({ message: err.message })
+const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
+    if (res.headersSent) {
+        return next(err)
     }
+    res.status(500).json({ error: err })
 }
 
 export default errorHandler
